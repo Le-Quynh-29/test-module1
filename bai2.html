@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findPosition(x, arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === x) {
+                return i;
+            }
+        }
+        return "Phan tu " + x + " ko nam trong mang";
+    }
+    let arr = [1,3,4,6,7,8,9];
+    let x = +prompt("enter number");
+    document.write("vị trí của phần tử " + x + "là" + findPosition(x, arr));
+</script>
+</body>
+</html>

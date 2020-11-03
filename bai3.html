@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhap chuoi');
+    let checkArr = ["a", "o", "e", "u", "i"];
+    function check(str) {
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            for (let j = 0; j < checkArr.length; j++) {
+                if (checkArr[j] === str[i]) {
+                    count++;
+                }
+            }
+        }
+        if (count === 0) {
+            return false;
+        } else {
+            return ('Chuỗi có số ký tự số nguyên âm là : ' + count);
+        }
+    }
+    alert(check(str));
+</script>
+</body>
+</html>
